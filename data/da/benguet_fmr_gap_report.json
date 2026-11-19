@@ -1,0 +1,285 @@
+{
+  "staged_shapefile": "data/da/benguet_fmr_staged_utm.shp",
+  "corridor_shapefile": "data/dpwh/corridor/corridor_lrs.shp",
+  "provisional_atok_shapefile": "data/fmr/atok_fmr_provisional_utm.shp",
+  "distance_method": "exact 2D Euclidean point-to-segment from either line endpoint to DPWH corridor_lrs polyline segments (UTM Zone 51N metres)",
+  "n_staged_lines": 182,
+  "total_geom_km": 95.65,
+  "endpoint_threshold_counts": {
+    "within_40m": 15,
+    "within_200m": 34,
+    "within_1km": 99,
+    "inventory_80m_sample_expectation": {
+      "within_40m": 14,
+      "within_200m": 34,
+      "within_1km": 99
+    }
+  },
+  "seven_labels": {
+    "Buguias": {
+      "count": 7,
+      "link": "buguias",
+      "geom_km": 3.92,
+      "min_m": 261.3,
+      "nearest_FMR_ID": "2016-CAR-BEN-INFRA-FMRDP-FMR-00165",
+      "nearest_RD_NAME": "Landingan-Lobo (Amdodon-Tin-apan ) FMR, Brgy. Bangao, Buguias, Benguet",
+      "nearest_BRGY_NAME": "Bangao",
+      "within_40m": 0,
+      "within_200m": 0,
+      "within_1km": 2
+    },
+    "Mankayan": {
+      "count": 13,
+      "link": "mankayan",
+      "geom_km": 7.94,
+      "min_m": 142.5,
+      "nearest_FMR_ID": "2022-CAR-BEN-INFRA-FMRDP-FMR-00507",
+      "nearest_RD_NAME": "Concreting of Brgy. Paco to Brgy. Cabiten FMR, Brgy. Paco and Brgy. Cabiten, Mankayan, Benguet",
+      "nearest_BRGY_NAME": "Paco & Cabiten",
+      "within_40m": 0,
+      "within_200m": 2,
+      "within_1km": 6
+    },
+    "Atok": {
+      "count": 14,
+      "link": "atok",
+      "geom_km": 8.54,
+      "min_m": 2.5,
+      "nearest_FMR_ID": "2021-CAR-BEN-INFRA-FMRDP-FMR-00487",
+      "nearest_RD_NAME": "Concreting of Km. 24-to-Sitio Adala, Caliking FMR, Caliking, Atok, Benguet",
+      "nearest_BRGY_NAME": "Caliking",
+      "within_40m": 2,
+      "within_200m": 3,
+      "within_1km": 8
+    },
+    "Tublay": {
+      "count": 18,
+      "link": "tublay",
+      "geom_km": 9.15,
+      "min_m": 1.1,
+      "nearest_FMR_ID": "2019-CAR-BEN-INFRA-FMRDP-FMR-00069",
+      "nearest_RD_NAME": "Sitio Suyoc-Sitio Ambassador-Sitio Sayatan, Brgy. Ba-ayan FMR, Brgy. Ba-ayan, Tublay, Benguet",
+      "nearest_BRGY_NAME": "Brgy. Ba-ayan",
+      "within_40m": 1,
+      "within_200m": 2,
+      "within_1km": 8
+    },
+    "Kabayan": {
+      "count": 17,
+      "link": "kabayan",
+      "geom_km": 9.77,
+      "min_m": 2.1,
+      "nearest_FMR_ID": "2017-CAR-BEN-INFRA-FMRDP-FMR-00349",
+      "nearest_RD_NAME": "Kabsayan-Tadimoymoy FMR, Brgy. Adaoay, Kabayan, Benguet",
+      "nearest_BRGY_NAME": "Adaoay",
+      "within_40m": 1,
+      "within_200m": 3,
+      "within_1km": 12
+    },
+    "Bakun": {
+      "count": 8,
+      "link": "bakun",
+      "geom_km": 4.74,
+      "min_m": 267.5,
+      "nearest_FMR_ID": "2019-CAR-BEN-INFRA-FMRDP-FMR-00134",
+      "nearest_RD_NAME": "Concreting of Sitio Nacanga - Municipal Plaza Road, Brgy. Ampusongan FMR, Brgy. Ampusongan, Bakun, Benguet",
+      "nearest_BRGY_NAME": "Ampusongan",
+      "within_40m": 0,
+      "within_200m": 0,
+      "within_1km": 4
+    },
+    "La Trinidad": {
+      "count": 10,
+      "link": "la_trinidad",
+      "geom_km": 5.62,
+      "min_m": 6.8,
+      "nearest_FMR_ID": "2018-CAR-BEN-INFRA-FMRDP-FMR-00364",
+      "nearest_RD_NAME": "Lamtang FMR, Brgy. Puguis, La Trinidad, Benguet",
+      "nearest_BRGY_NAME": "Puguis",
+      "within_40m": 1,
+      "within_200m": 2,
+      "within_1km": 4
+    }
+  },
+  "per_municipality": {
+    "Atok": {
+      "count": 14,
+      "link": "atok",
+      "geom_km": 8.54,
+      "min_m": 2.5,
+      "nearest_FMR_ID": "2021-CAR-BEN-INFRA-FMRDP-FMR-00487",
+      "nearest_RD_NAME": "Concreting of Km. 24-to-Sitio Adala, Caliking FMR, Caliking, Atok, Benguet",
+      "nearest_BRGY_NAME": "Caliking",
+      "within_40m": 2,
+      "within_200m": 3,
+      "within_1km": 8
+    },
+    "Baguio City": {
+      "count": 18,
+      "link": "baguio_city",
+      "geom_km": 5.37,
+      "min_m": 2.6,
+      "nearest_FMR_ID": "2017-CAR-BEN-INFRA-FMRDP-FMR-00404",
+      "nearest_RD_NAME": "Ambiong FMR (Leading to strawberry fields), Brgy. Ambiong, Baguio City",
+      "nearest_BRGY_NAME": "Ambiong",
+      "within_40m": 2,
+      "within_200m": 7,
+      "within_1km": 17
+    },
+    "Bakun": {
+      "count": 8,
+      "link": "bakun",
+      "geom_km": 4.74,
+      "min_m": 267.5,
+      "nearest_FMR_ID": "2019-CAR-BEN-INFRA-FMRDP-FMR-00134",
+      "nearest_RD_NAME": "Concreting of Sitio Nacanga - Municipal Plaza Road, Brgy. Ampusongan FMR, Brgy. Ampusongan, Bakun, Benguet",
+      "nearest_BRGY_NAME": "Ampusongan",
+      "within_40m": 0,
+      "within_200m": 0,
+      "within_1km": 4
+    },
+    "Bokod": {
+      "count": 22,
+      "link": "bokod",
+      "geom_km": 12.45,
+      "min_m": 3.5,
+      "nearest_FMR_ID": "2016-CAR-BEN-INFRA-FMRDP-FMR-00127",
+      "nearest_RD_NAME": "Ansodeng FMR, Brgy. Ambuklao, Bokod, Benguet",
+      "nearest_BRGY_NAME": "Ambuclao",
+      "within_40m": 1,
+      "within_200m": 7,
+      "within_1km": 10
+    },
+    "Buguias": {
+      "count": 7,
+      "link": "buguias",
+      "geom_km": 3.92,
+      "min_m": 261.3,
+      "nearest_FMR_ID": "2016-CAR-BEN-INFRA-FMRDP-FMR-00165",
+      "nearest_RD_NAME": "Landingan-Lobo (Amdodon-Tin-apan ) FMR, Brgy. Bangao, Buguias, Benguet",
+      "nearest_BRGY_NAME": "Bangao",
+      "within_40m": 0,
+      "within_200m": 0,
+      "within_1km": 2
+    },
+    "Itogon": {
+      "count": 9,
+      "link": "itogon",
+      "geom_km": 3.36,
+      "min_m": 7.1,
+      "nearest_FMR_ID": "2016-CAR-BEN-INFRA-FMRDP-FMR-00186",
+      "nearest_RD_NAME": "Loacan-Anteg-in FMR, Brgy. Loacan, Itogon, Benguet",
+      "nearest_BRGY_NAME": "Loacan",
+      "within_40m": 3,
+      "within_200m": 4,
+      "within_1km": 6
+    },
+    "Kabayan": {
+      "count": 17,
+      "link": "kabayan",
+      "geom_km": 9.77,
+      "min_m": 2.1,
+      "nearest_FMR_ID": "2017-CAR-BEN-INFRA-FMRDP-FMR-00349",
+      "nearest_RD_NAME": "Kabsayan-Tadimoymoy FMR, Brgy. Adaoay, Kabayan, Benguet",
+      "nearest_BRGY_NAME": "Adaoay",
+      "within_40m": 1,
+      "within_200m": 3,
+      "within_1km": 12
+    },
+    "Kapangan": {
+      "count": 10,
+      "link": "kapangan",
+      "geom_km": 5.37,
+      "min_m": 8.8,
+      "nearest_FMR_ID": "2018-CAR-BEN-INFRA-FMRDP-FMR-00363",
+      "nearest_RD_NAME": "Aso-Solijo FMR, Brgy. Datakan, Kapangan, Benguet",
+      "nearest_BRGY_NAME": "Datakan",
+      "within_40m": 1,
+      "within_200m": 1,
+      "within_1km": 5
+    },
+    "Kibungan": {
+      "count": 7,
+      "link": "kibungan",
+      "geom_km": 4.57,
+      "min_m": 380.2,
+      "nearest_FMR_ID": "2019-CAR-BEN-INFRA-FMRDP-FMR-00169",
+      "nearest_RD_NAME": "Concreting of Sitio Pakpakitan Junction-Sitio Cagam-is, Brgy. Madaymen FMR, Brgy. Madaymen, Kibungan, Benguet",
+      "nearest_BRGY_NAME": "Madaymen",
+      "within_40m": 0,
+      "within_200m": 0,
+      "within_1km": 2
+    },
+    "La Trinidad": {
+      "count": 10,
+      "link": "la_trinidad",
+      "geom_km": 5.62,
+      "min_m": 6.8,
+      "nearest_FMR_ID": "2018-CAR-BEN-INFRA-FMRDP-FMR-00364",
+      "nearest_RD_NAME": "Lamtang FMR, Brgy. Puguis, La Trinidad, Benguet",
+      "nearest_BRGY_NAME": "Puguis",
+      "within_40m": 1,
+      "within_200m": 2,
+      "within_1km": 4
+    },
+    "Mankayan": {
+      "count": 13,
+      "link": "mankayan",
+      "geom_km": 7.94,
+      "min_m": 142.5,
+      "nearest_FMR_ID": "2022-CAR-BEN-INFRA-FMRDP-FMR-00507",
+      "nearest_RD_NAME": "Concreting of Brgy. Paco to Brgy. Cabiten FMR, Brgy. Paco and Brgy. Cabiten, Mankayan, Benguet",
+      "nearest_BRGY_NAME": "Paco & Cabiten",
+      "within_40m": 0,
+      "within_200m": 2,
+      "within_1km": 6
+    },
+    "Sablan": {
+      "count": 16,
+      "link": "sablan",
+      "geom_km": 6.88,
+      "min_m": 12.0,
+      "nearest_FMR_ID": "2019-CAR-BEN-INFRA-FMRDP-FMR-00182",
+      "nearest_RD_NAME": "Concreting of Sitio Calot-Sitio Kedeng, Brgy. Banangan FMR, Brgy. Banangan, Sablan, Benguet",
+      "nearest_BRGY_NAME": "Banangan",
+      "within_40m": 1,
+      "within_200m": 1,
+      "within_1km": 7
+    },
+    "Tuba": {
+      "count": 13,
+      "link": "tuba",
+      "geom_km": 7.98,
+      "min_m": 4.9,
+      "nearest_FMR_ID": "2022-CAR-BEN-INFRA-FMRDP-FMR-00564",
+      "nearest_RD_NAME": "Concreting of Sitio Shekdan to Sitio Benmetao FMR, Brgy. Camp 4 FMR, Brgy. Camp 4, Tuba, Benguet",
+      "nearest_BRGY_NAME": "Camp 4",
+      "within_40m": 2,
+      "within_200m": 2,
+      "within_1km": 8
+    },
+    "Tublay": {
+      "count": 18,
+      "link": "tublay",
+      "geom_km": 9.15,
+      "min_m": 1.1,
+      "nearest_FMR_ID": "2019-CAR-BEN-INFRA-FMRDP-FMR-00069",
+      "nearest_RD_NAME": "Sitio Suyoc-Sitio Ambassador-Sitio Sayatan, Brgy. Ba-ayan FMR, Brgy. Ba-ayan, Tublay, Benguet",
+      "nearest_BRGY_NAME": "Brgy. Ba-ayan",
+      "within_40m": 1,
+      "within_200m": 2,
+      "within_1km": 8
+    }
+  },
+  "atok_provisional_bbox_overlaps_within_40m": {
+    "atok_provisional_bbox_utm": [
+      252130.07,
+      1829349.71,
+      255290.18,
+      1834447.02
+    ],
+    "buffer_m": 40.0,
+    "count": 0,
+    "lines": []
+  }
+}

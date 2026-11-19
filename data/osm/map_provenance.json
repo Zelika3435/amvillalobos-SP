@@ -1,0 +1,183 @@
+{
+  "title": "GAMA map provenance and claim boundaries",
+  "generated_at": "2026-10-22T15:14:20.334384+00:00",
+  "crs": "EPSG:32651 (WGS 1984 UTM Zone 51N) for all GAMA shapefiles",
+  "validation": {
+    "ok": true,
+    "errors": [],
+    "warnings": [],
+    "paths": {
+      "benguet_lrs.shp": "C:\\Users\\Achilles\\Documents\\CMSC 190\\Baguio-Supply-Chain-ABM\\SP_proj\\includes\\benguet_lrs.shp",
+      "network_connected_utm.shp": "C:\\Users\\Achilles\\Documents\\CMSC 190\\Baguio-Supply-Chain-ABM\\SP_proj\\includes\\network_connected_utm.shp",
+      "farm_clusters_utm.shp": "C:\\Users\\Achilles\\Documents\\CMSC 190\\Baguio-Supply-Chain-ABM\\SP_proj\\includes\\farm_clusters_utm.shp",
+      "markets_utm.shp": "C:\\Users\\Achilles\\Documents\\CMSC 190\\Baguio-Supply-Chain-ABM\\SP_proj\\includes\\markets_utm.shp"
+    },
+    "network_segments": 17972,
+    "synthetic_bridges": 0,
+    "provisional_geoportal_fmr_segments": 0,
+    "da_completed_fmr_segments": 165,
+    "osm_tier2_segments": 644,
+    "osm_tier3_segments": 16954,
+    "disallowed_segments": 0,
+    "farms": 7,
+    "markets": 3,
+    "components": 1,
+    "geometry_policy": "dpwh_plus_benguet_completed_fmr_plus_osm_tier23_connected"
+  },
+  "how_to_verify": [
+    "python scripts/validate_maps.py",
+    "python scripts/write_map_provenance.py",
+    "python scripts/rebuild_maps.py  # close GAMA first if includes/ is locked",
+    "python scripts/sync_includes_from_data.py",
+    "In QGIS: load data/dpwh/corridor/corridor_lrs.shp and confirm ROAD_NAME contains Kennon Rd, Marcos Hi-way, Quirino H-Way (Baguio-Bauang), Baguio-Bontoc Rd",
+    "In GAMA: roads should be source=dpwh, source=geoportal_preview, or source=da_completed_fmr.",
+    "python scripts/build_corridor_dem.py  # display-only SRTM clip; optional",
+    "python scripts/build_atok_fmr_provisional.py  # before connect_road_network if FMR missing"
+  ],
+  "credibility_rules": [
+    "Official DPWH LRS is the primary road geometry loaded into GAMA.",
+    "Provisional Atok FMR (geoportal_preview) may be loaded; it is not the DA completed-FMR shapefile in data/da/.",
+    "Benguet DA completed FMR is loaded as source=da_completed_fmr. Do not bridge gaps.",
+    "Do not invent synthetic bridges or pink farm-access stubs beyond the provisional FMR file.",
+    "Farm clusters are municipal labels, not plot surveys.",
+    "Do not present the GAMA display as a digital twin of Benguet roads.",
+    "The corridor DEM is display-only. It does not set travel times or closures."
+  ],
+  "layers": [
+    {
+      "id": "dpwh_lrs_archive",
+      "path": "data/dpwh/LRS_National Road Networks.zip",
+      "authority": "DPWH (FOI, 9 October 2026)",
+      "claim_tier": "official_source",
+      "may_claim": "National linear referencing geometry as received; not the simulated world",
+      "must_not_claim": "Barangay FMR; surveyed farm points; that the full PH layer was loaded into GAMA",
+      "sha256": "f4de43823f29f35f947f611e730fc18f87efc27bafbdaa6812407e396f0eee15",
+      "n_features": null,
+      "rebuild": null
+    },
+    {
+      "id": "dpwh_benguet_clip",
+      "path": "data/dpwh/corridor/corridor_lrs.shp",
+      "gama_path": "SP_proj/includes/benguet_lrs.shp",
+      "authority": "Derived from DPWH LRS by scripts/clip_dpwh_corridor.py",
+      "claim_tier": "official_derived",
+      "may_claim": "All DPWH LRS segments in Benguet + Baguio DEO (+ Kennon/Naguilian/Halsema stubs)",
+      "must_not_claim": "Complete local road inventory; official FMR",
+      "sha256": "52b7bd88978e446e080aa3b7b95eebe08c968dc996d0d5771dfe984b5892c426",
+      "n_features": 209,
+      "rebuild": "python scripts/clip_dpwh_corridor.py",
+      "corridor_name_check": {
+        "halsema": {
+          "required_any_of": [
+            "Baguio-Bontoc Rd"
+          ],
+          "present": true,
+          "n_segments": 4
+        },
+        "kennon": {
+          "required_any_of": [
+            "Kennon Rd"
+          ],
+          "present": true,
+          "n_segments": 4
+        },
+        "marcos": {
+          "required_any_of": [
+            "Marcos Hi-way"
+          ],
+          "present": true,
+          "n_segments": 4
+        },
+        "naguilian": {
+          "required_any_of": [
+            "Quirino H-Way (Baguio-Bauang)",
+            "Baguio-Bauang Rd",
+            "Bauang-Baguio Rd"
+          ],
+          "present": true,
+          "n_segments": 5
+        }
+      }
+    },
+    {
+      "id": "network_connected",
+      "path": "data/osm/network_connected_utm.shp",
+      "gama_path": "SP_proj/includes/network_connected_utm.shp",
+      "authority": "DPWH Benguet clip + optional provisional Atok FMR (geoportal_preview) + staged Benguet DA completed FMR",
+      "claim_tier": "official_derived",
+      "may_claim": "Routing on DPWH LRS in the Benguet clip; provisional Atok FMR when loaded; Benguet DA completed FMR segments that meet that clip",
+      "must_not_claim": "That provisional FMR is the official DA shapefile; a continuous farm-to-highway graph; full highland farm access",
+      "sha256": "aa4460ad6b94054c2932608c4034398e77f9965be89ea08f6b3569469e5459d6",
+      "n_features": 17972,
+      "rebuild": "python scripts/build_atok_fmr_provisional.py && python scripts/connect_road_network.py",
+      "synthetic_bridges": false,
+      "osm_fmr_proxy": false,
+      "provisional_geoportal_fmr": false,
+      "components": 1,
+      "component_sizes": [
+        200207
+      ]
+    },
+    {
+      "id": "atok_fmr_provisional",
+      "path": "data/fmr/atok_fmr_provisional_utm.shp",
+      "authority": "Geoportal DA FMR WMS preview (21 Oct 2026) + OSM Jose Mencio geometry",
+      "claim_tier": "provisional_preview",
+      "may_claim": "Atok farm-to-Halsema connector aligned with Geoportal preview corridor",
+      "must_not_claim": "Official DA FMR shapefile; surveyed centerline",
+      "sha256": "844071fe24dd2eaf6ac1a14ec433772784d1373de3e6e52fcf53f999af6d62c5",
+      "n_features": 1,
+      "rebuild": "python scripts/build_atok_fmr_provisional.py",
+      "replace_when": "An official centerline of this same Poblacion-Camp 30 corridor is identified. data/da completed-project FMRs are a different layer and do not replace this edge."
+    },
+    {
+      "id": "farm_clusters",
+      "path": "data/osm/farm_clusters_utm.shp",
+      "gama_path": "SP_proj/includes/farm_clusters_utm.shp",
+      "authority": "Researcher-placed municipal labels; distance to DPWH reported, not bridged",
+      "claim_tier": "structural_assumption",
+      "may_claim": "Seven municipal production labels (Buguias, Mankayan, Atok, Tublay, Kabayan, Bakun, La Trinidad)",
+      "must_not_claim": "Individual farm GPS; cadastral parcels; that every farm sits on a verified FMR",
+      "sha256": "c8d75b12dd907c492f720c6dd1e2009c07570650d8692fe043e28b94c9b75839",
+      "n_features": 7,
+      "rebuild": "python scripts/connect_road_network.py"
+    },
+    {
+      "id": "markets_posts",
+      "path": "data/osm/markets_utm.shp",
+      "gama_path": "SP_proj/includes/markets_utm.shp",
+      "authority": "Named posts from frozen OSM dump (cited OSM way IDs), reprojected to UTM 51N",
+      "claim_tier": "open_data_point",
+      "may_claim": "BAPTC as simulated post; LTVTP and Hangar as cited locations",
+      "must_not_claim": "LTVTP or Hangar as simulated trading floors in Phase 1",
+      "sha256": "4f1955ac9d77112593efc607f2ae9b60d0164bdddd98a857dd01aa3c7c3fcaf2",
+      "n_features": 3,
+      "rebuild": null
+    },
+    {
+      "id": "official_fmr",
+      "path": "data/da/Benguet/Benguet Completed FMRs.shp",
+      "authority": "DA completed FMR project GIS, local drop 22 Oct 2026. Other CAR provinces under data/da/ are archive only.",
+      "claim_tier": "loaded_via_staged_copy",
+      "may_claim": "Benguet completed project segments (182 polylines, about 95.6 km) are in the GAMA road graph as source=da_completed_fmr.",
+      "must_not_claim": "That these segments are the Geoportal Atok Poblacion-Camp 30 centerline, a continuous farm-to-highway graph, or plot GPS.",
+      "sha256": "764975951286fea202c6d34a3545275b1f97f9f81b64e399322542061e5f605c",
+      "n_features": 182,
+      "rebuild": "python scripts/stage_benguet_fmr.py && python scripts/connect_road_network.py",
+      "status": "Loaded through data/da/benguet_fmr_staged_utm.shp. Municipal maps in data/da/ are polygons, not farm points."
+    },
+    {
+      "id": "corridor_dem_display",
+      "path": "data/dem/corridor_dem_utm.asc",
+      "gama_path": "SP_proj/includes/corridor_dem_utm.asc",
+      "authority": "SRTM GL1 via AWS elevation-tiles-prod / Mapzen skadi; clipped by scripts/build_corridor_dem.py",
+      "claim_tier": "open_data_display",
+      "may_claim": "Terrain backdrop under DPWH roads for map readability",
+      "must_not_claim": "Travel times, landslide probability, or BAU calibration from this DEM",
+      "sha256": "eaf2eb073b2ea19508c0c29f82b31fea60a18cff549a2e7a30a4bec4b3cf9736",
+      "n_features": null,
+      "rebuild": "python scripts/build_corridor_dem.py",
+      "role": "display_only"
+    }
+  ]
+}

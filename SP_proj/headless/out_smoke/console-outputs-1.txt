@@ -1,0 +1,6 @@
+c:\Users\Achilles\Documents\CMSC 190\Baguio-Supply-Chain-ABM\SP_proj\headless\..\models\Corridor_BAU.gaml model is being compiled...
+BAU init: roads=136 farms=7 farmers=7 disposers=3 truckers=4 trust_enabled=true
+
+Image Display Surface created for simulation Simulation 0
+Image Display Surface created for simulation Simulation 0
+................................................................................................................> GAMA  : Simulation running                            for: _________ 5592ms

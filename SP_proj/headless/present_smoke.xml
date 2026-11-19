@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Experiment_plan>
+  <Simulation id="1" sourcePath="c:/Users/Achilles/Documents/CMSC 190/Baguio-Supply-Chain-ABM/SP_proj/models/Corridor_Present.gaml" experiment="present_flow" finalStep="800" seed="19001">
+    <Parameters/>
+    <Outputs/>
+  </Simulation>
+</Experiment_plan>

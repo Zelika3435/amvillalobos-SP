@@ -1,0 +1,71 @@
+[
+  {
+    "file": "baptc_way_461802915.geojson",
+    "ok": true,
+    "name": "Benguet Agri Pinoy Trading Center",
+    "n_features": 12
+  },
+  {
+    "file": "nominatim_hits.json",
+    "ok": true,
+    "keys": [
+      "kennon",
+      "halsema",
+      "palispis",
+      "naguilian",
+      "ltvtp",
+      "hangar"
+    ]
+  },
+  {
+    "file": "kennon.geojson",
+    "ok": true,
+    "n_elements": 135,
+    "n_features": 135,
+    "names": [
+      "Kennon Road"
+    ]
+  },
+  {
+    "file": "halsema.geojson",
+    "ok": true,
+    "n_elements": 62,
+    "n_features": 62,
+    "names": [
+      "Halsema - Ambuklao Road",
+      "Halsema - Labey Road",
+      "Halsema Highway",
+      "Halsema-Madaymen Provincial Road"
+    ]
+  },
+  {
+    "file": "palispis.geojson",
+    "ok": true,
+    "n_elements": 96,
+    "n_features": 96,
+    "names": [
+      "Ben Palispis Highway",
+      "Palispis Loop"
+    ]
+  },
+  {
+    "file": "naguilian.geojson",
+    "ok": true,
+    "n_elements": 60,
+    "n_features": 60,
+    "names": [
+      "Elpidio Quirino Highway"
+    ]
+  },
+  {
+    "file": "posts.geojson",
+    "ok": true,
+    "n_elements": 3,
+    "n_features": 3,
+    "names": [
+      "Benguet Agri Pinoy Trading Center",
+      "Hangar Market/Vegetables section",
+      "La Trinidad Vegetable Trading Post"
+    ]
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "source_zip": "data/dpwh/LRS_National Road Networks.zip",
+  "source_layer": "LRS_National_Roads_by_Congressional_District",
+  "output": "data/dpwh/corridor/corridor_lrs.shp",
+  "snapshot_bbox_utm": [
+    212988.64680000022,
+    1793295.5581,
+    286743.6852000002,
+    1892620.1920999996
+  ],
+  "n_kept": 209,
+  "n_source": 4719,
+  "by_role": {
+    "benguet_all": 177,
+    "alternate": 12,
+    "principal": 20
+  },
+  "by_link": {
+    "benguet_network": 177,
+    "mankayan_access": 2,
+    "kennon": 4,
+    "naguilian": 5,
+    "asin_nangalisan": 5,
+    "halsema": 4,
+    "buguias_access": 2,
+    "marcos": 7,
+    "pico_lamtang": 1,
+    "benguet_nv": 2
+  },
+  "by_road_class": {
+    "Tertiary": 87,
+    "Secondary": 93,
+    "Primary": 29
+  },
+  "crs": "EPSG:32651 (WGS 1984 UTM Zone 51N)",
+  "scope": "All connected DPWH LRS national-road segments within the corridor square snapshot (corridor_dem_utm.asc bbox covering Benguet, Baguio City, and adjacent La Union, Mt. Province, Ilocos Sur, Ifugao, Pangasinan, and Nueva Vizcaya corridor links)."
+}

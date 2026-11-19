@@ -1,0 +1,38 @@
+{
+  "retrieved_at": "2026-10-22T15:22:14.566661+00:00",
+  "bbox_wgs84": [
+    120.30301339545768,
+    16.203253624530966,
+    121.0050300369192,
+    17.108180722149978
+  ],
+  "bbox_utm": [
+    212988.64680000022,
+    1793295.5581,
+    286743.6852000002,
+    1892620.1920999996
+  ],
+  "crs": "EPSG:32651 (WGS 1984 UTM Zone 51N)",
+  "total_clipped_ways": 17982,
+  "by_tier": {
+    "osm_tier2": 647,
+    "osm_tier3": 17335
+  },
+  "km_by_tier": {
+    "osm_tier2": 444.74,
+    "osm_tier3": 6831.27
+  },
+  "by_highway_tag": {
+    "residential": 12176,
+    "secondary": 636,
+    "secondary_link": 11,
+    "tertiary": 1424,
+    "tertiary_link": 1,
+    "track": 1009,
+    "unclassified": 2725
+  },
+  "outputs": {
+    "geojson": "data/osm/osm_tier23_corridor.geojson",
+    "shapefile": "data/osm/osm_tier23_utm.shp"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "ok": false,
+  "errors": [
+    "GAMA endpoint graph has 7858 components; run connect_road_network.py (splits polylines at shared junction vertices)"
+  ],
+  "warnings": [],
+  "paths": {
+    "benguet_lrs.shp": "C:\\Users\\Achilles\\Documents\\CMSC 190\\Baguio-Supply-Chain-ABM\\SP_proj\\includes\\benguet_lrs.shp",
+    "network_connected_utm.shp": "C:\\Users\\Achilles\\Documents\\CMSC 190\\Baguio-Supply-Chain-ABM\\SP_proj\\includes\\network_connected_utm.shp",
+    "farm_clusters_utm.shp": "C:\\Users\\Achilles\\Documents\\CMSC 190\\Baguio-Supply-Chain-ABM\\SP_proj\\includes\\farm_clusters_utm.shp",
+    "markets_utm.shp": "C:\\Users\\Achilles\\Documents\\CMSC 190\\Baguio-Supply-Chain-ABM\\SP_proj\\includes\\markets_utm.shp"
+  },
+  "network_segments": 16983,
+  "synthetic_bridges": 0,
+  "provisional_geoportal_fmr_segments": 0,
+  "da_completed_fmr_segments": 166,
+  "osm_tier2_segments": 560,
+  "osm_tier3_segments": 16052,
+  "disallowed_segments": 0,
+  "farms": 7,
+  "markets": 3,
+  "components": 1,
+  "geometry_policy": "dpwh_plus_benguet_completed_fmr_plus_osm_tier23_connected"
+}

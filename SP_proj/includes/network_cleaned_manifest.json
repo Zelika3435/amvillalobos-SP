@@ -1,0 +1,133 @@
+{
+  "input": "data/osm/network_connected_utm.shp",
+  "output": "data/osm/network_cleaned_utm.shp",
+  "gama_copy": "SP_proj/includes/network_cleaned_utm.shp",
+  "rule": "Named arteries stay. Links that put the seven farms, BAPTC, and those arteries on one component stay. Another link stays when it joins two points already on that component, so the graph has a second route. A dead-end spur does not, and it is dropped.",
+  "features_in": 54882,
+  "features_out": 8158,
+  "features_dropped": 46724,
+  "kept_by_source": {
+    "dpwh": 3937,
+    "osm_tier2": 944,
+    "osm_tier3": 3259,
+    "da_completed_fmr": 18
+  },
+  "dropped_by_source": {
+    "dpwh": 7724,
+    "da_completed_fmr": 1888,
+    "osm_tier2": 5699,
+    "osm_tier3": 31413
+  },
+  "order_counts": {
+    "0": 2052,
+    "1": 60,
+    "2": 1110,
+    "3": 2275,
+    "4": 1731,
+    "5": 751,
+    "6": 175
+  },
+  "components": 1,
+  "reroute_cycles": 309,
+  "baptc_component_nodes": 6231,
+  "farms": [
+    {
+      "name": "Buguias",
+      "feature": 4944,
+      "dist_m": 0.0,
+      "node": [
+        268148.4,
+        1850183.243
+      ]
+    },
+    {
+      "name": "Mankayan",
+      "feature": 24465,
+      "dist_m": 0.0,
+      "node": [
+        264987.679,
+        1865785.216
+      ]
+    },
+    {
+      "name": "Atok",
+      "feature": 49899,
+      "dist_m": 0.0,
+      "node": [
+        252623.417,
+        1833347.646
+      ]
+    },
+    {
+      "name": "Tublay",
+      "feature": 18259,
+      "dist_m": 0.0,
+      "node": [
+        244060.773,
+        1825478.647
+      ]
+    },
+    {
+      "name": "Kabayan",
+      "feature": 2121,
+      "dist_m": 0.0,
+      "node": [
+        269427.135,
+        1839022.05
+      ]
+    },
+    {
+      "name": "Bakun",
+      "feature": 32946,
+      "dist_m": 0.0,
+      "node": [
+        250883.798,
+        1857935.541
+      ]
+    },
+    {
+      "name": "La Trinidad",
+      "feature": 4975,
+      "dist_m": 0.0,
+      "node": [
+        243581.406,
+        1821929.488
+      ]
+    }
+  ],
+  "baptc": {
+    "label": "Benguet Agri Pinoy Trading Center",
+    "feature": 12142,
+    "dist_m": 88.9
+  },
+  "artery_links_before": {
+    "asin_nangalisan": 841,
+    "benguet_nv": 153,
+    "buguias_access": 80,
+    "halsema": 353,
+    "kennon": 74,
+    "mankayan_access": 89,
+    "marcos": 191,
+    "naguilian": 217,
+    "pico_lamtang": 58
+  },
+  "artery_links_after": {
+    "asin_nangalisan": 841,
+    "benguet_nv": 153,
+    "buguias_access": 80,
+    "halsema": 353,
+    "kennon": 74,
+    "mankayan_access": 89,
+    "marcos": 191,
+    "naguilian": 217,
+    "pico_lamtang": 58
+  },
+  "sources_unchanged": [
+    "da_completed_fmr",
+    "dpwh",
+    "osm_tier2",
+    "osm_tier3"
+  ],
+  "synthetic_bridges": false,
+  "provisional_atok_restored": false
+}

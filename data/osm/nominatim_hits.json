@@ -1,0 +1,194 @@
+{
+  "kennon": [
+    {
+      "osm_type": "way",
+      "osm_id": 177307283,
+      "display_name": "Kennon Road, Ongasan, Loakan Proper, District 12, Baguio, Cordillera Administrative Region, 2600, Philippines",
+      "lat": "16.3728026",
+      "lon": "120.6080077",
+      "class": null,
+      "type": "trunk"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1479329436,
+      "display_name": "Kennon Road, Ongasan, Camp 7, District 13, Baguio, Cordillera Administrative Region, 2600, Philippines",
+      "lat": "16.3680472",
+      "lon": "120.6081984",
+      "class": null,
+      "type": "trunk"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 53842388,
+      "display_name": "Kennon Road, Cari\u00f1o Village, Camp 7, District 13, Baguio, Cordillera Administrative Region, 2600, Philippines",
+      "lat": "16.3805351",
+      "lon": "120.6075330",
+      "class": null,
+      "type": "trunk"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1215248418,
+      "display_name": "Kennon Road, Camp 8, District 13, Baguio, Cordillera Administrative Region, 2600, Philippines",
+      "lat": "16.3988173",
+      "lon": "120.6001377",
+      "class": null,
+      "type": "trunk"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1480776977,
+      "display_name": "Kennon Road, Purok 3, Poliwes, District 13, Baguio, Cordillera Administrative Region, 2600, Philippines",
+      "lat": "16.3949132",
+      "lon": "120.5994894",
+      "class": null,
+      "type": "trunk"
+    }
+  ],
+  "halsema": [
+    {
+      "osm_type": "way",
+      "osm_id": 965600333,
+      "display_name": "Halsema Highway, Town Proper, Upper Cruz, Cruz, La Trinidad, Benguet, Cordillera Administrative Region, 2601, Philippines",
+      "lat": "16.4665644",
+      "lon": "120.5942573",
+      "class": null,
+      "type": "trunk"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 843906986,
+      "display_name": "Halsema Highway, Tili, La Trinidad, Benguet, Cordillera Administrative Region, 2615, Philippines",
+      "lat": "16.4649412",
+      "lon": "120.6249163",
+      "class": null,
+      "type": "trunk"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1115461334,
+      "display_name": "Halsema Highway, Boted, La Trinidad, Benguet, Cordillera Administrative Region, 2615, Philippines",
+      "lat": "16.4612032",
+      "lon": "120.6171722",
+      "class": null,
+      "type": "trunk"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1044722098,
+      "display_name": "Halsema Highway, Papasok, Cruz, La Trinidad, Benguet, Cordillera Administrative Region, 2601, Philippines",
+      "lat": "16.4617100",
+      "lon": "120.6076681",
+      "class": null,
+      "type": "trunk"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1479373113,
+      "display_name": "Halsema Highway, Dengsi, Cruz, La Trinidad, Benguet, Cordillera Administrative Region, 2601, Philippines",
+      "lat": "16.4645389",
+      "lon": "120.6009065",
+      "class": null,
+      "type": "trunk"
+    }
+  ],
+  "palispis": [
+    {
+      "osm_type": "way",
+      "osm_id": 177317002,
+      "display_name": "Ben Palispis Highway, Poyopoy, Tuba, Benguet, Cordillera Administrative Region, 2603, Philippines",
+      "lat": "16.3820429",
+      "lon": "120.5413175",
+      "class": null,
+      "type": "primary"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 552824257,
+      "display_name": "Ben Palispis Highway, Tuba, Benguet, Cordillera Administrative Region, 2603, Philippines",
+      "lat": "16.3772591",
+      "lon": "120.5462270",
+      "class": null,
+      "type": "primary"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 552734084,
+      "display_name": "Ben Palispis Highway, Dela Prime Ville, Tuba, Benguet, Cordillera Administrative Region, 2603, Philippines",
+      "lat": "16.3842959",
+      "lon": "120.5577899",
+      "class": null,
+      "type": "primary"
+    }
+  ],
+  "naguilian": [
+    {
+      "osm_type": "way",
+      "osm_id": 1166086750,
+      "display_name": "Elpidio Quirino Highway, Purok 6, Irisan, District 16, Baguio, Cordillera Administrative Region, 2600, Philippines",
+      "lat": "16.4215286",
+      "lon": "120.5543795",
+      "class": null,
+      "type": "trunk"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 819724762,
+      "display_name": "Elpidio Quirino Highway, Purok 5, Irisan, District 16, Baguio, Cordillera Administrative Region, 2600, Philippines",
+      "lat": "16.4238677",
+      "lon": "120.5500746",
+      "class": null,
+      "type": "trunk"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 1133382769,
+      "display_name": "Elpidio Quirino Highway, Purok 15, Irisan, District 16, Baguio, Cordillera Administrative Region, 2600, Philippines",
+      "lat": "16.4139066",
+      "lon": "120.5596361",
+      "class": null,
+      "type": "trunk"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 992634185,
+      "display_name": "Elpidio Quirino Highway, Quezon Hill Proper, District 16, Baguio, Cordillera Administrative Region, 2600, Philippines",
+      "lat": "16.4130000",
+      "lon": "120.5845661",
+      "class": null,
+      "type": "trunk"
+    },
+    {
+      "osm_type": "way",
+      "osm_id": 995067817,
+      "display_name": "Elpidio Quirino Highway, Purok 13, Irisan, District 16, Baguio, Cordillera Administrative Region, 2600, Philippines",
+      "lat": "16.4178060",
+      "lon": "120.5565592",
+      "class": null,
+      "type": "trunk"
+    }
+  ],
+  "ltvtp": [
+    {
+      "osm_type": "way",
+      "osm_id": 208932792,
+      "display_name": "La Trinidad Vegetable Trading Post, Fangonil Street, Pico, Km. 5, Cruz, La Trinidad, Benguet, Cordillera Administrative Region, 2601, Philippines",
+      "lat": "16.4496452",
+      "lon": "120.5891723",
+      "class": null,
+      "type": "marketplace"
+    }
+  ],
+  "hangar": [
+    {
+      "osm_type": "way",
+      "osm_id": 224613130,
+      "display_name": "Hangar Market/Vegetables section, P. Zamora Street, Upper Market Subdivision, District 6, Central Business District, Baguio, Cordillera Administrative Region, 2600, Philippines",
+      "lat": "16.4165020",
+      "lon": "120.5954362",
+      "class": null,
+      "type": "marketplace"
+    }
+  ]
+}

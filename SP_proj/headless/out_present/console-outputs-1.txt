@@ -1,0 +1,23 @@
+c:\Users\Achilles\Documents\CMSC 190\Baguio-Supply-Chain-ABM\SP_proj\models\Corridor_Present.gaml model is being compiled...
+roads=54882 dpwh=11661 fmr_da=1906 osm_tier2=6643 osm_tier3=34672 farms=7 markets=3 dem_cells=46065
+
+  route BAPTC -> Buguias: 217 edges, 77197 m
+
+  route BAPTC -> Mankayan: 251 edges, 89091 m
+
+  route BAPTC -> Atok: 136 edges, 33923 m
+
+  route BAPTC -> Tublay: 50 edges, 7117 m
+
+  route BAPTC -> Kabayan: 199 edges, 64961 m
+
+  route BAPTC -> Bakun: 286 edges, 79610 m
+
+  route BAPTC -> La Trinidad: 43 edges, 3125 m
+
+PRESENTATION ready: roads=54882 graph_edges=54882 farms=7 truckers=7
+
+Image Display Surface created for simulation Simulation 0
+Image Display Surface created for simulation Simulation 0
+Image Display Surface created for simulation Simulation 0
+....................................................................................................> GAMA  : Simulation running                            for: _________ 24287ms

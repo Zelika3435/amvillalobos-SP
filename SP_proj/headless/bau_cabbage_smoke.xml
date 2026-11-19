@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Experiment_plan>
+	<Simulation id="1"
+		sourcePath="../models/Corridor_BAU.gaml"
+		experiment="bau_cabbage"
+		finalStep="336"
+		until=""
+		seed="19001">
+		<Parameters>
+			<Parameter name="Trust enabled" type="BOOLEAN" value="true" var="trust_enabled"/>
+			<Parameter name="Write daily CSV" type="BOOLEAN" value="true" var="write_daily_csv"/>
+		</Parameters>
+		<Outputs/>
+	</Simulation>
+</Experiment_plan>

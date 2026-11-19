@@ -1,0 +1,90 @@
+{
+  "url": "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/NWSNEW/0052M4AWB02.px",
+  "chosen": {
+    "Geolocation": [
+      "PHILIPPINES",
+      "..CORDILLERA ADMINISTRATIVE REGION (CAR)",
+      "....Benguet"
+    ],
+    "Commodity": [
+      "Carrots",
+      "White/Irish Potato"
+    ],
+    "Year": "all",
+    "Period": "all"
+  },
+  "payload": {
+    "query": [
+      {
+        "code": "Geolocation",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "0",
+            "2",
+            "5"
+          ]
+        }
+      },
+      {
+        "code": "Commodity",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "0",
+            "6"
+          ]
+        }
+      },
+      {
+        "code": "Year",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16"
+          ]
+        }
+      },
+      {
+        "code": "Period",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ]
+        }
+      }
+    ],
+    "response": {
+      "format": "csv"
+    }
+  }
+}

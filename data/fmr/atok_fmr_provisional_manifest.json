@@ -1,0 +1,28 @@
+{
+  "id": "atok_fmr_provisional",
+  "source": "geoportal_preview",
+  "role": "fmr",
+  "link": "atok_fmr",
+  "geom_basis": "OSM Jose Mencio Provincial Road",
+  "osm_way_ids": [
+    1031873912,
+    561948597
+  ],
+  "n_vertices": 840,
+  "len_m": 11367.7,
+  "start_utm": [
+    252144.78,
+    1834447.02
+  ],
+  "end_utm": [
+    255058.46,
+    1829349.71
+  ],
+  "must_not_claim": "Official DA FMR shapefile; surveyed centerline",
+  "may_claim": "Provisional Atok farm-to-Halsema connector aligned with Geoportal DA FMR preview (21 Oct 2026) using archived OSM Jose Mencio geometry",
+  "replace_when": "An official centerline of this same Poblacion-Camp 30 corridor is identified. data/da completed-project FMRs are a different layer and do not replace this edge.",
+  "outputs": [
+    "data/fmr/atok_fmr_provisional.geojson",
+    "data/fmr/atok_fmr_provisional_utm.shp"
+  ]
+}

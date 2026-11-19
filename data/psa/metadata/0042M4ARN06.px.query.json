@@ -1,0 +1,82 @@
+{
+  "url": "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/2018NEW/0042M4ARN06.px",
+  "chosen": {
+    "Geolocation": [
+      "PHILIPPINES",
+      "..CAR - Cordillera Administrative Region",
+      "....Benguet",
+      "....City of Baguio"
+    ],
+    "Commodity": [
+      "CABBAGE, 1 KG"
+    ],
+    "Year": "all",
+    "Period": "all"
+  },
+  "payload": {
+    "query": [
+      {
+        "code": "Geolocation",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "000000000",
+            "140000000",
+            "141100000",
+            "141102000"
+          ]
+        }
+      },
+      {
+        "code": "Commodity",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "0"
+          ]
+        }
+      },
+      {
+        "code": "Year",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8"
+          ]
+        }
+      },
+      {
+        "code": "Period",
+        "selection": {
+          "filter": "item",
+          "values": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12"
+          ]
+        }
+      }
+    ],
+    "response": {
+      "format": "csv"
+    }
+  }
+}

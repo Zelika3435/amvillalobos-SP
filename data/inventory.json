@@ -1,0 +1,196 @@
+{
+  "retrieved_at": "2026-09-02T11:05:00Z",
+  "note": "Public dumps frozen 2026-09-02. Facebook was not scraped. Geoportal WFS remains 401. DA completed FMR shapefiles are a local drop on 2026-10-22 under data/da/ and are not yet in GAMA. No farm-point layer is in that drop.",
+  "agritrakph": {
+    "raw": "data/agritrak/raw/baptc_history_prices.json",
+    "core_csv": "data/agritrak/derived/baptc_core_crops.csv",
+    "summary": "data/agritrak/derived/baptc_summary.json",
+    "n_records": 19284,
+    "n_dates": 401,
+    "window": ["2024-10-27", "2025-12-21"],
+    "latestDataDate": "2025-12-21",
+    "core_unique_dates": {
+      "Cabbage Wonderball": 401,
+      "Cabbage Rareball": 288,
+      "Cabbage Scorpio": 104,
+      "Potato Granola": 400,
+      "Potato LBR": 343,
+      "Carrot": 398,
+      "Chayote": 399
+    }
+  },
+  "psa_openstat": {
+    "api": "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB",
+    "format": "csv (json-stat2 returned dummy 1.0 values on 2026-09-02)",
+    "tidy": "data/psa/derived/core_crops_tidy.csv",
+    "tables": [
+      {
+        "role": "production_volume",
+        "table_id": "0082E4EVCP3.px",
+        "path": "2E/CS/0082E4EVCP3.px",
+        "years": "2010-2026",
+        "geo": ["PHILIPPINES", "CAR", "Benguet"],
+        "crops": ["Cabbage", "Potato", "Carrot", "Chayote fruit"]
+      },
+      {
+        "role": "area_planted",
+        "table_id": "0112E4EAHM3.px",
+        "path": "2E/CS/0112E4EAHM3.px",
+        "years": "2010-2026",
+        "geo": ["PHILIPPINES", "CAR", "Benguet"]
+      },
+      {
+        "role": "farmgate_rootcrops",
+        "table_id": "0032M4AFN02.px",
+        "path": "2M/NFG/0032M4AFN02.px",
+        "years": "2010-2026",
+        "crops": ["Carrot", "Potato"]
+      },
+      {
+        "role": "farmgate_fruit_vegetables",
+        "table_id": "0032M4AFN05.px",
+        "path": "2M/NFG/0032M4AFN05.px",
+        "years": "2010-2026",
+        "crops": ["Chayote fruit"]
+      },
+      {
+        "role": "farmgate_leafy",
+        "table_id": "0032M4AFN06.px",
+        "path": "2M/NFG/0032M4AFN06.px",
+        "years": "2010-2026",
+        "crops": ["Cabbage"]
+      },
+      {
+        "role": "wholesale_rootcrops",
+        "table_id": "0052M4AWB02.px",
+        "path": "2M/NWSNEW/0052M4AWB02.px",
+        "years": "2010-2026",
+        "crops": ["Carrots", "White/Irish Potato"]
+      },
+      {
+        "role": "wholesale_fruit_vegetables",
+        "table_id": "0052M4AWB05.px",
+        "path": "2M/NWSNEW/0052M4AWB05.px",
+        "years": "2010-2026",
+        "crops": ["Chayote"]
+      },
+      {
+        "role": "wholesale_leafy",
+        "table_id": "0052M4AWB06.px",
+        "path": "2M/NWSNEW/0052M4AWB06.px",
+        "years": "2010-2026",
+        "crops": ["Cabbage"]
+      },
+      {
+        "role": "retail_rootcrops",
+        "table_id": "0042M4ARN02.px",
+        "path": "2M/2018NEW/0042M4ARN02.px",
+        "years": "2018-2026",
+        "geo": ["PHILIPPINES", "CAR", "Benguet", "City of Baguio"]
+      },
+      {
+        "role": "retail_fruit_vegetables",
+        "table_id": "0042M4ARN05.px",
+        "path": "2M/2018NEW/0042M4ARN05.px",
+        "years": "2018-2026",
+        "geo": ["PHILIPPINES", "CAR", "Benguet", "City of Baguio"]
+      },
+      {
+        "role": "retail_leafy",
+        "table_id": "0042M4ARN06.px",
+        "path": "2M/2018NEW/0042M4ARN06.px",
+        "years": "2018-2026",
+        "geo": ["PHILIPPINES", "CAR", "Benguet", "City of Baguio"],
+        "crops": ["CABBAGE, 1 KG"]
+      }
+    ]
+  },
+  "osm": {
+    "role": "archive and named-post points only; not GAMA road geometry; DPWH LRS is the only highway source in GAMA",
+    "corridor_roads": "data/osm/corridor_roads.geojson",
+    "named_posts": "data/osm/named_posts.geojson",
+    "highland_tertiary_archived_not_used": "data/osm/highland_access_proxy.geojson",
+    "osm_ids": {
+      "LTVTP": "way/208932792",
+      "BAPTC": "way/461802915",
+      "Hangar_Market_vegetables": "way/224613130"
+    },
+    "n_features": {
+      "kennon": 135,
+      "halsema": 62,
+      "palispis": 96,
+      "naguilian": 60,
+      "named_posts": 3,
+      "highland_tertiary": 232
+    }
+  },
+  "dpwh_lrs": {
+    "role": "official national highway GIS from FOI; corridor clip includes Scenario B alternates",
+    "foi_received": "2026-10-09",
+    "zip": "data/dpwh/LRS_National Road Networks.zip",
+    "layer": "LRS_National_Roads_by_Congressional_District",
+    "n_segments": 4719,
+    "crs": "WGS_1984_UTM_Zone_51N",
+    "corridor_name_map": {
+      "halsema": ["Baguio-Bontoc Rd"],
+      "kennon": ["Kennon Rd", "Kennon Rd Channelization"],
+      "marcos": ["Marcos Hi-way"],
+      "naguilian": ["Quirino H-Way (Baguio-Bauang)", "Baguio-Bauang Rd", "Bauang-Baguio Rd"]
+    },
+    "control_number": null,
+    "corridor_clip": {
+      "path": "data/dpwh/corridor/corridor_lrs.shp",
+      "script": "scripts/clip_dpwh_corridor.py",
+      "n_kept": 136,
+      "scope": "all DPWH LRS in Benguet + Baguio DEO + outflow stubs",
+      "by_role": {
+        "principal": 17,
+        "alternate": 7,
+        "benguet_all": 112
+      },
+      "gama_copy": "SP_proj/includes/benguet_lrs.shp"
+    },
+    "verification": {
+      "validate": "scripts/validate_maps.py",
+      "provenance": "scripts/write_map_provenance.py",
+      "validation_json": "data/osm/map_validation.json",
+      "provenance_json": "data/osm/map_provenance.json",
+      "rebuild": "scripts/rebuild_maps.py"
+    }
+  },
+  "da_completed_fmr": {
+    "received": "2026-10-22",
+    "role": "completed FMR project polylines; structural geometry; not yet loaded into GAMA",
+    "crs": "EPSG:32651",
+    "canonical": "shapefile; KMZ counts differ and are not the inventory",
+    "benguet": {
+      "path": "data/da/Benguet/Benguet Completed FMRs.shp",
+      "n": 182,
+      "geom_km": 95.6,
+      "attr_km": 96.1,
+      "median_km": 0.51,
+      "queued_for_gama": true
+    },
+    "archive_only_n": {
+      "Abra": 108,
+      "Apayao": 50,
+      "Ifugao": 92,
+      "Kalinga": 72,
+      "Mt. Province": 65
+    },
+    "municipal_polygons": "data/da/*/*Map.shp are polygons, not farm points",
+    "farm_points": null,
+    "transmittal": null,
+    "merge_rule": "docs/DATA.md section 3c"
+  },
+  "dem": {
+    "role": "display-only terrain backdrop in GAMA; not travel time or BAU calibration",
+    "source": "SRTM GL1 via AWS elevation-tiles-prod / Mapzen skadi",
+    "asc": "data/dem/corridor_dem_utm.asc",
+    "manifest": "data/dem/manifest.json",
+    "gama_copy": "SP_proj/includes/corridor_dem_utm.asc",
+    "rebuild": "scripts/build_corridor_dem.py",
+    "cell_m": 400,
+    "crs": "EPSG:32651"
+  }
+}

@@ -1,0 +1,17 @@
+# Oversized raw extracts (GitHub rejects files >100MB; also cause HTTP 408 timeouts)
+data/osm/_geofabrik_roads/
+data/osm/_overpass_cache/
+data/dpwh/_extract/
+data/dpwh/*.zip
+data/dem/raw/
+
+# Local / tooling noise
+__pycache__/
+*.pyc
+.Rhistory
+.RData
+.Rproj.user/
+.DS_Store
+Thumbs.db
+*.tmp
+logs/

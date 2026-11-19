@@ -1,0 +1,5 @@
+c:\Users\Achilles\Documents\CMSC 190\Baguio-Supply-Chain-ABM\SP_proj\models\Corridor_World.gaml model is being compiled...
+dpwh_roads=136 farms=7 markets=3 dem_cells=46065 (display-only DEM; official FMR not loaded)
+
+Image Display Surface created for simulation Simulation 0
+.> GAMA  : Simulation running                            for: _________ 81ms

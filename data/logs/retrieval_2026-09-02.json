@@ -1,0 +1,506 @@
+{
+  "started_at": "2026-09-02T11:01:45Z",
+  "steps": {
+    "agritrak": {
+      "retrieved_at": "2026-09-02T11:01:45Z",
+      "source": "https://api-marketmonitor.tbdh.dev/api/baptc/history-prices",
+      "n_records": 19284,
+      "n_unique_dates": 401,
+      "date_min": "2024-10-27",
+      "date_max": "2025-12-21",
+      "n_vegetables": 34,
+      "vegetables": {
+        "Bell Pepper": 3239,
+        "Broccoli": 448,
+        "Cabbage Rareball": 703,
+        "Cabbage Scorpio": 259,
+        "Cabbage Wonderball": 1335,
+        "Carrot": 1542,
+        "Cauliflower": 35,
+        "Celery": 375,
+        "Chayote": 753,
+        "Cherry Tomato": 51,
+        "Chinese Cabbage (Wombok)": 707,
+        "Coriander": 4,
+        "Cucumber": 509,
+        "French Beans": 1,
+        "Garden Pea": 251,
+        "Japanese Cucumber": 84,
+        "Korean Radish": 182,
+        "Lemon": 527,
+        "Lettuce": 319,
+        "Onion Leeks": 402,
+        "Parsley": 4,
+        "Petchay": 67,
+        "Potato Granola": 2166,
+        "Potato LBR": 754,
+        "Radish Long": 1516,
+        "Red Cabbage": 267,
+        "Red Radish": 1,
+        "Snap Beans": 528,
+        "Spinach": 1,
+        "Strawberry": 6,
+        "Sugar Beets": 38,
+        "Tomato": 1843,
+        "Toothpick Beans": 65,
+        "Zucchini": 302
+      },
+      "core_crop_records": {
+        "Cabbage Wonderball": 1335,
+        "Cabbage Rareball": 703,
+        "Cabbage Scorpio": 259,
+        "Potato Granola": 2166,
+        "Potato LBR": 754,
+        "Carrot": 1542,
+        "Chayote": 753
+      },
+      "core_crop_unique_dates": {
+        "Cabbage Wonderball": 401,
+        "Cabbage Rareball": 288,
+        "Cabbage Scorpio": 104,
+        "Potato Granola": 400,
+        "Potato LBR": 343,
+        "Carrot": 398,
+        "Chayote": 399
+      },
+      "csv": "data/agritrak/derived/baptc_core_crops.csv"
+    },
+    "psa": [
+      {
+        "role": "production_volume",
+        "table_id": "0082E4EVCP3.px",
+        "path": "2E/CS/0082E4EVCP3.px",
+        "title": "Vegetables and Root Crops: Volume of Production, by Region, Province, Quarter, and Semester, 2010-2026",
+        "url": "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2E/CS/0082E4EVCP3.px",
+        "n_rows": 1380,
+        "year_min": "2010",
+        "year_max": "2026",
+        "geolocations": [
+          "....Benguet",
+          "..CORDILLERA ADMINISTRATIVE REGION (CAR)",
+          "PHILIPPINES"
+        ],
+        "commodities": [
+          "Cabbage",
+          "Carrot",
+          "Chayote fruit",
+          "Potato"
+        ],
+        "chosen": {
+          "Crop": [
+            "Cabbage",
+            "Potato",
+            "Carrot",
+            "Chayote fruit"
+          ],
+          "Geolocation": [
+            "PHILIPPINES",
+            "..CORDILLERA ADMINISTRATIVE REGION (CAR)",
+            "....Benguet"
+          ],
+          "Year": "all",
+          "Period": "all"
+        },
+        "csv": "data/psa/derived/production_volume.csv",
+        "updated": null,
+        "ok": true
+      },
+      {
+        "role": "area_planted",
+        "table_id": "0112E4EAHM3.px",
+        "path": "2E/CS/0112E4EAHM3.px",
+        "title": "Vegetables and Root Crops: Area Planted/Harvested, by Region, Province, Quarter, and Semester, 2010-2026",
+        "url": "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2E/CS/0112E4EAHM3.px",
+        "n_rows": 660,
+        "year_min": "2010",
+        "year_max": "2026",
+        "geolocations": [
+          "....Benguet",
+          "..CORDILLERA ADMINISTRATIVE REGION (CAR)",
+          "PHILIPPINES"
+        ],
+        "commodities": [
+          "Cabbage",
+          "Carrot",
+          "Chayote fruit",
+          "Potato"
+        ],
+        "chosen": {
+          "Crop": [
+            "Cabbage",
+            "Potato",
+            "Carrot",
+            "Chayote fruit"
+          ],
+          "Geolocation": [
+            "PHILIPPINES",
+            "..CORDILLERA ADMINISTRATIVE REGION (CAR)",
+            "....Benguet"
+          ],
+          "Year": "all",
+          "Period": "all"
+        },
+        "csv": "data/psa/derived/area_planted.csv",
+        "updated": null,
+        "ok": true
+      },
+      {
+        "role": "farmgate_rootcrops",
+        "table_id": "0032M4AFN02.px",
+        "path": "2M/NFG/0032M4AFN02.px",
+        "title": "Rootcrops: Farmgate Prices by Geolocation, Commodity, Year and Period",
+        "url": "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/NFG/0032M4AFN02.px",
+        "n_rows": 1284,
+        "year_min": "2010",
+        "year_max": "2026",
+        "geolocations": [
+          "....Benguet",
+          "..CORDILLERA ADMINISTRATIVE REGION (CAR)",
+          "PHILIPPINES"
+        ],
+        "commodities": [
+          "Carrot",
+          "Potato"
+        ],
+        "chosen": {
+          "Geolocation": [
+            "PHILIPPINES",
+            "..CORDILLERA ADMINISTRATIVE REGION (CAR)",
+            "....Benguet"
+          ],
+          "Commodity": [
+            "Carrot",
+            "Potato"
+          ],
+          "Year": "all",
+          "Period": "all"
+        },
+        "csv": "data/psa/derived/farmgate_rootcrops.csv",
+        "updated": null,
+        "ok": true
+      },
+      {
+        "role": "farmgate_fruit_vegetables",
+        "table_id": "0032M4AFN05.px",
+        "path": "2M/NFG/0032M4AFN05.px",
+        "title": "Fruit Vegetables: Farmgate Prices by Geolocation, Commodity, Year and Period",
+        "url": "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/NFG/0032M4AFN05.px",
+        "n_rows": 642,
+        "year_min": "2010",
+        "year_max": "2026",
+        "geolocations": [
+          "....Benguet",
+          "..CORDILLERA ADMINISTRATIVE REGION (CAR)",
+          "PHILIPPINES"
+        ],
+        "commodities": [
+          "Chayote fruit"
+        ],
+        "chosen": {
+          "Geolocation": [
+            "PHILIPPINES",
+            "..CORDILLERA ADMINISTRATIVE REGION (CAR)",
+            "....Benguet"
+          ],
+          "Commodity": [
+            "Chayote fruit"
+          ],
+          "Year": "all",
+          "Period": "all"
+        },
+        "csv": "data/psa/derived/farmgate_fruit_vegetables.csv",
+        "updated": null,
+        "ok": true
+      },
+      {
+        "role": "farmgate_leafy",
+        "table_id": "0032M4AFN06.px",
+        "path": "2M/NFG/0032M4AFN06.px",
+        "title": "Leafy Vegetables: Farmgate Prices by Geolocation, Commodity, Year and Period",
+        "url": "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/NFG/0032M4AFN06.px",
+        "n_rows": 642,
+        "year_min": "2010",
+        "year_max": "2026",
+        "geolocations": [
+          "....Benguet",
+          "..CORDILLERA ADMINISTRATIVE REGION (CAR)",
+          "PHILIPPINES"
+        ],
+        "commodities": [
+          "Cabbage"
+        ],
+        "chosen": {
+          "Geolocation": [
+            "PHILIPPINES",
+            "..CORDILLERA ADMINISTRATIVE REGION (CAR)",
+            "....Benguet"
+          ],
+          "Commodity": [
+            "Cabbage"
+          ],
+          "Year": "all",
+          "Period": "all"
+        },
+        "csv": "data/psa/derived/farmgate_leafy.csv",
+        "updated": null,
+        "ok": true
+      },
+      {
+        "role": "wholesale_rootcrops",
+        "table_id": "0052M4AWB02.px",
+        "path": "2M/NWSNEW/0052M4AWB02.px",
+        "title": "Rootcrops: Wholesale Selling Prices of Agricultural Commodities (new geographic code)",
+        "url": "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/NWSNEW/0052M4AWB02.px",
+        "n_rows": 1220,
+        "year_min": "2010",
+        "year_max": "2026",
+        "geolocations": [
+          "....Benguet",
+          "..CORDILLERA ADMINISTRATIVE REGION (CAR)",
+          "PHILIPPINES"
+        ],
+        "commodities": [
+          "Carrots",
+          "White/Irish Potato"
+        ],
+        "chosen": {
+          "Geolocation": [
+            "PHILIPPINES",
+            "..CORDILLERA ADMINISTRATIVE REGION (CAR)",
+            "....Benguet"
+          ],
+          "Commodity": [
+            "Carrots",
+            "White/Irish Potato"
+          ],
+          "Year": "all",
+          "Period": "all"
+        },
+        "csv": "data/psa/derived/wholesale_rootcrops.csv",
+        "updated": null,
+        "ok": true
+      },
+      {
+        "role": "wholesale_fruit_vegetables",
+        "table_id": "0052M4AWB05.px",
+        "path": "2M/NWSNEW/0052M4AWB05.px",
+        "title": "Fruit Vegetables: Wholesale Selling Prices of Agricultural Commodities (new geographic code)",
+        "url": "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/NWSNEW/0052M4AWB05.px",
+        "n_rows": 610,
+        "year_min": "2010",
+        "year_max": "2026",
+        "geolocations": [
+          "....Benguet",
+          "..CORDILLERA ADMINISTRATIVE REGION (CAR)",
+          "PHILIPPINES"
+        ],
+        "commodities": [
+          "Chayote"
+        ],
+        "chosen": {
+          "Geolocation": [
+            "PHILIPPINES",
+            "..CORDILLERA ADMINISTRATIVE REGION (CAR)",
+            "....Benguet"
+          ],
+          "Commodity": [
+            "Chayote"
+          ],
+          "Year": "all",
+          "Period": "all"
+        },
+        "csv": "data/psa/derived/wholesale_fruit_vegetables.csv",
+        "updated": null,
+        "ok": true
+      },
+      {
+        "role": "wholesale_leafy",
+        "table_id": "0052M4AWB06.px",
+        "path": "2M/NWSNEW/0052M4AWB06.px",
+        "title": "Leafy Vegetables: Wholesale Selling Prices of Agricultural Commodities (new geographic code)",
+        "url": "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/NWSNEW/0052M4AWB06.px",
+        "n_rows": 608,
+        "year_min": "2010",
+        "year_max": "2026",
+        "geolocations": [
+          "....Benguet",
+          "..CORDILLERA ADMINISTRATIVE REGION (CAR)",
+          "PHILIPPINES"
+        ],
+        "commodities": [
+          "Cabbage"
+        ],
+        "chosen": {
+          "Geolocation": [
+            "PHILIPPINES",
+            "..CORDILLERA ADMINISTRATIVE REGION (CAR)",
+            "....Benguet"
+          ],
+          "Commodity": [
+            "Cabbage"
+          ],
+          "Year": "all",
+          "Period": "all"
+        },
+        "csv": "data/psa/derived/wholesale_leafy.csv",
+        "updated": null,
+        "ok": true
+      },
+      {
+        "role": "retail_rootcrops",
+        "table_id": "0042M4ARN02.px",
+        "path": "2M/2018NEW/0042M4ARN02.px",
+        "title": "Rootcrops: Retail Prices of Agricultural Commodities (2018-based, new geographic code)",
+        "url": "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/2018NEW/0042M4ARN02.px",
+        "n_rows": 1110,
+        "year_min": "2018",
+        "year_max": "2026",
+        "geolocations": [
+          "....Benguet",
+          "....City of Baguio",
+          "..CAR - Cordillera Administrative Region",
+          "PHILIPPINES"
+        ],
+        "commodities": [
+          "CARROT, 1 KG",
+          "POTATO, 1 KG",
+          "POTATO, BAGUIO, GOOD QUALITY, 1 KG",
+          "POTATO, IRISH (WHITE), 1 KG"
+        ],
+        "chosen": {
+          "Geolocation": [
+            "PHILIPPINES",
+            "..CAR - Cordillera Administrative Region",
+            "....Benguet",
+            "....City of Baguio"
+          ],
+          "Commodity": [
+            "CARROT, 1 KG",
+            "POTATO, 1 KG",
+            "POTATO, BAGUIO, GOOD QUALITY, 1 KG",
+            "POTATO, IRISH (WHITE), 1 KG"
+          ],
+          "Year": "all",
+          "Period": "all"
+        },
+        "csv": "data/psa/derived/retail_rootcrops.csv",
+        "updated": null,
+        "ok": true
+      },
+      {
+        "role": "retail_fruit_vegetables",
+        "table_id": "0042M4ARN05.px",
+        "path": "2M/2018NEW/0042M4ARN05.px",
+        "title": "Fruit Vegetables: Retail Prices of Agricultural Commodities (2018-based, new geographic code)",
+        "url": "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/2018NEW/0042M4ARN05.px",
+        "n_rows": 444,
+        "year_min": "2018",
+        "year_max": "2026",
+        "geolocations": [
+          "....Benguet",
+          "....City of Baguio",
+          "..CAR - Cordillera Administrative Region",
+          "PHILIPPINES"
+        ],
+        "commodities": [
+          "CHAYOTE, 1 KG"
+        ],
+        "chosen": {
+          "Geolocation": [
+            "PHILIPPINES",
+            "..CAR - Cordillera Administrative Region",
+            "....Benguet",
+            "....City of Baguio"
+          ],
+          "Commodity": [
+            "CHAYOTE, 1 KG"
+          ],
+          "Year": "all",
+          "Period": "all"
+        },
+        "csv": "data/psa/derived/retail_fruit_vegetables.csv",
+        "updated": null,
+        "ok": true
+      },
+      {
+        "role": "retail_leafy",
+        "table_id": "0042M4ARN06.px",
+        "path": "2M/2018NEW/0042M4ARN06.px",
+        "title": "Leafy Vegetables: Retail Prices of Agricultural Commodities (2018-based, new geographic code)",
+        "url": "https://openstat.psa.gov.ph/PXWeb/api/v1/en/DB/2M/2018NEW/0042M4ARN06.px",
+        "n_rows": 444,
+        "year_min": "2018",
+        "year_max": "2026",
+        "geolocations": [
+          "....Benguet",
+          "....City of Baguio",
+          "..CAR - Cordillera Administrative Region",
+          "PHILIPPINES"
+        ],
+        "commodities": [
+          "CABBAGE, 1 KG"
+        ],
+        "chosen": {
+          "Geolocation": [
+            "PHILIPPINES",
+            "..CAR - Cordillera Administrative Region",
+            "....Benguet",
+            "....City of Baguio"
+          ],
+          "Commodity": [
+            "CABBAGE, 1 KG"
+          ],
+          "Year": "all",
+          "Period": "all"
+        },
+        "csv": "data/psa/derived/retail_leafy.csv",
+        "updated": null,
+        "ok": true
+      }
+    ],
+    "osm": [
+      {
+        "file": "corridor_roads",
+        "ok": false,
+        "error": "HTTP Error 504: Gateway Timeout"
+      },
+      {
+        "file": "named_posts",
+        "ok": false,
+        "error": "HTTP Error 504: Gateway Timeout"
+      },
+      {
+        "file": "data/osm/highland_access_proxy.geojson",
+        "n_elements": 232,
+        "n_features": 232,
+        "names": [
+          "Acop-Kapangan-Kibungan-Bakun Road",
+          "Alilem-Sugpon-Sudipen Road",
+          "Ambangeg-Palansa-Babalak Road",
+          "Ambuklao Dam Access Road",
+          "Amcaway-Nalseb Barangay Road",
+          "Aurora Street",
+          "Bangho-Asin Provincial Road",
+          "Buyagan-Wangal-Banengbeng Provincial Road",
+          "Camp Dangwa-Bahong-Sadag Provincial Road",
+          "Dayap-Banao Road",
+          "Halsema - Labey Road",
+          "Halsema-Madaymen Provincial Road",
+          "Jose Mencio Provincial Road",
+          "Karao \u2013 Koral \u2013 Busok \u2013 Ambangeg Road",
+          "La Trinidad Capitol - Bineng Provincial Road",
+          "Lomon-Central-Sagubo Provincial Road",
+          "Lomon-Labueg-Datakan Provincial Road",
+          "Mankayan-Balili Provincial Road",
+          "Mankayan-Bedbed Provincial Road",
+          "NRJ-Kaling-Lebeng-Babadak Road",
+          "NRJ-Soysoyan-Ballay-Tawangan-Lusod Proper Road",
+          "Shilan - Pagal - Talingting Provincial Road",
+          "Tinoc - Pulag Trail"
+        ],
+        "ok": true
+      }
+    ]
+  },
+  "finished_at": "2026-09-02T11:04:44Z"
+}

@@ -1,0 +1,115 @@
+{
+  "synthetic_bridges": false,
+  "osm_fmr_proxy": false,
+  "provisional_geoportal_fmr": false,
+  "dpwh_segments": 11661,
+  "da_completed_fmr_segments": 1906,
+  "osm_tier2_segments": 6643,
+  "osm_tier3_segments": 34672,
+  "geometry_sources": [
+    "DPWH LRS Benguet clip (source=dpwh)",
+    "DA completed FMRs Benguet (source=da_completed_fmr)",
+    "OSM Tier 2 roads: secondary, secondary_link (source=osm_tier2)",
+    "OSM Tier 3 roads: tertiary, tertiary_link, unclassified, residential, track (source=osm_tier3)"
+  ],
+  "snap_tol_m": 40.0,
+  "segments_in": 54882,
+  "bridges": 0,
+  "components": 1,
+  "component_sizes": [
+    200759
+  ],
+  "gama_endpoint_components": 1,
+  "gama_endpoint_component_sizes": [
+    36581
+  ],
+  "farm_components": {
+    "Buguias": {
+      "component_rank": 0,
+      "component_nodes": 200759,
+      "in_largest_component": true,
+      "dist_m_to_nearest_network": 0.0,
+      "dist_m_to_nearest_dpwh": 0.0,
+      "dist_m_to_nearest_da_completed_fmr": 4780.4,
+      "on_network": true,
+      "on_dpwh": true,
+      "on_da_completed_fmr": false,
+      "graph_route_to_baptc_m": 23009.3
+    },
+    "Mankayan": {
+      "component_rank": 0,
+      "component_nodes": 200759,
+      "in_largest_component": true,
+      "dist_m_to_nearest_network": 0.0,
+      "dist_m_to_nearest_dpwh": 266.8,
+      "dist_m_to_nearest_da_completed_fmr": 1821.1,
+      "on_network": true,
+      "on_dpwh": false,
+      "on_da_completed_fmr": false,
+      "graph_route_to_baptc_m": 23955.5
+    },
+    "Atok": {
+      "component_rank": 0,
+      "component_nodes": 200759,
+      "in_largest_component": true,
+      "dist_m_to_nearest_network": 0.0,
+      "dist_m_to_nearest_dpwh": 4299.9,
+      "dist_m_to_nearest_da_completed_fmr": 2222.5,
+      "on_network": true,
+      "on_dpwh": false,
+      "on_da_completed_fmr": false,
+      "graph_route_to_baptc_m": 12697.5
+    },
+    "Tublay": {
+      "component_rank": 0,
+      "component_nodes": 200759,
+      "in_largest_component": true,
+      "dist_m_to_nearest_network": 0.0,
+      "dist_m_to_nearest_dpwh": 3372.3,
+      "dist_m_to_nearest_da_completed_fmr": 48.4,
+      "on_network": true,
+      "on_dpwh": false,
+      "on_da_completed_fmr": false,
+      "graph_route_to_baptc_m": 2859.4
+    },
+    "Kabayan": {
+      "component_rank": 0,
+      "component_nodes": 200759,
+      "in_largest_component": true,
+      "dist_m_to_nearest_network": 0.0,
+      "dist_m_to_nearest_dpwh": 0.0,
+      "dist_m_to_nearest_da_completed_fmr": 806.3,
+      "on_network": true,
+      "on_dpwh": true,
+      "on_da_completed_fmr": false,
+      "graph_route_to_baptc_m": 20488.8
+    },
+    "Bakun": {
+      "component_rank": 0,
+      "component_nodes": 200759,
+      "in_largest_component": true,
+      "dist_m_to_nearest_network": 0.0,
+      "dist_m_to_nearest_dpwh": 758.7,
+      "dist_m_to_nearest_da_completed_fmr": 2556.1,
+      "on_network": true,
+      "on_dpwh": false,
+      "on_da_completed_fmr": false,
+      "graph_route_to_baptc_m": 17430.7
+    },
+    "La Trinidad": {
+      "component_rank": 0,
+      "component_nodes": 200759,
+      "in_largest_component": true,
+      "dist_m_to_nearest_network": 0.0,
+      "dist_m_to_nearest_dpwh": 0.0,
+      "dist_m_to_nearest_da_completed_fmr": 1681.0,
+      "on_network": true,
+      "on_dpwh": true,
+      "on_da_completed_fmr": false,
+      "graph_route_to_baptc_m": 1337.8
+    }
+  },
+  "note": "Fully connected single-component road network combining DPWH LRS Benguet clip, staged DA completed FMRs for Benguet, and OSM Tier 2 & 3 roads in the map crop. All 7 municipal farm clusters and BAPTC sit on the single connected component (0.0 m distance, zero synthetic bridges).",
+  "output": "data/osm/network_connected_utm.shp",
+  "gama_copy": "SP_proj/includes/network_connected_utm.shp"
+}
